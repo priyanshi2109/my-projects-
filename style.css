@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.outerbox{
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(   to  bottom right,lightblue,rgb(4, 4, 48));
+}
+
+main{
+    border: none;
+}
+.innerbox{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    box-shadow: 5px 5px 15px rgb(14, 14, 81);
+    z-index: 2;
+    background:linear-gradient(to top right,white,rgb(213, 220, 223));
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-container {
+    margin:20px 0;
+
+}
+.form-container p label{
+    margin: 10px 0;
+    display: block;
+
+}
+.form-container p input{
+    width: 100%;
+    padding: 10px;
+
+}
+.form-container p input[type="submit"]{
+    margin-top: 10px;
+    background-color: rgb(35, 90, 168);
+    color: white;
+    border: 1px solid black;
+}
+.form-container p input[type="submit"]:hover{
+    background-color: rgb(20, 20, 101);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.innerbox footer p {
+    text-align: center;
+}
+
+.circle{
+    height:200px;
+    width:200px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(1, 47, 79));
+    position: absolute;
+    
+}
+.c1{
+    top: 100px;
+    left: 40px;
+}
+.c2{
+    bottom: 100px;
+    right: 40px;
+}
