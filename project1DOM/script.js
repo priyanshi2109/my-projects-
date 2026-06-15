@@ -1,66 +1,55 @@
-// 4 pillers of DOM
-
-// 1 . selection of an element of html
-
-//  var a = document.querySelector("h1") // select h1 and store in variable a
-//  console.log(a)
-
- // 2 .changing in html
-//  a.innerHTML = "changed  html"   // changed html
-
-// or 
-// document.querySelector("h1").innerHTML="here it is"  // here it is 
-
-// 3 . changing css
-
-// a.style.color = "blue"
-// a.style.backgroundColor = "lightpink"
+// var add = document.querySelector("#add")
+// // var remove = document.querySelector("#remove")
+// var h5 = document.querySelector("h5")
 
 
-// 4. Event - listener
-
-// a.addEventListener("click",function(){
-//     a.innerHTML=("im changed ")
-//     a.style.color="blue"
-//     a.style.backgroundColor = "lightpink"
+// var flag =0;
+// add.addEventListener("click",function(){
+//     if(flag==0){
+//         h5.innerHTML=("friend")
+//         h5.style.color="green"
+//         flag=1;
+//     }
+//     else{
+//         remove.addEventListener("click",function(){
+//             h5.innerHTML=("stranger")
+//              h5.style.color="red"
+//       flag=0;
+//         })
+//     }
 // })
 
 
-// add event listener example
+// or
 
-var bulb = document.querySelector("#bulb")
-var btn = document.querySelector("button")
-let flag = 0;
-btn.addEventListener("click",function(){
-    if(flag===0){
-        bulb.style.backgroundColor = "yellow"
-    console.log("Cliocked")
-   flag =1;
+// add.addEventListener("click",function(){
+//     console.log("friend")
+//     h5.style.color="green"
+// })
+// remove.addEventListener("click",function(){
+//     console.log("stranger")
+//     h5.style.color="red"
+// })
+
+// if we have only add friend button
+
+var add = document.querySelector("#add")
+// var remove = document.querySelector("#remove")
+var h5 = document.querySelector("h5")
+let flag =0;
+add.addEventListener("click",function(){
+    if(flag==0){
+    h5.innerHTML =("friend")
+    h5.style.color="green"
+    add.innerHTML=("Remove friend")
+    flag=1;
     }
     else{
-        bulb.style.backgroundColor = "transparent"
-    console.log(" again Clicked")
-   flag =0;
-
+   h5.innerHTML=("stranger")
+    h5.style.color="red"
+     add.innerHTML=("add friend")
+    flag=0;
     }
 })
-
-
-
-// select multiple elements 
-
-// let h = document.querySelectorAll("h1")   // it will select all h1 in html
-// h.forEach(function(e){
-//     console.log(e)
-// })
-
-
-// select by id-name
-
-// let box = document.getElementById("box")
-
-// select by class name 
-
-// let box = document.getElementsByClassName("box")
 
 
