@@ -1,0 +1,36 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: black; 
+}
+#main{
+ position: relative;
+}
+
+.elem{
+    color: aliceblue;
+    border-bottom: 2px solid white;
+    height: 180px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.elem h1{
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+.elem img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0;
+    transition:  all linear 0.3s;
+    
+}
