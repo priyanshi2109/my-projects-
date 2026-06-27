@@ -1,0 +1,24 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgb(182, 130, 230);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#box{
+    height: 500px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+#box image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
